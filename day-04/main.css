@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: teal;
+    animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+    from {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    to {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
