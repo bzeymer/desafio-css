@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+button {
+    position: relative;
+    height: 40px;
+    background-color: black;
+    color: wheat;
+    border: 3px solid wheat;
+    outline: none;
+    padding: 0 20px;
+}
+
+button::before, button::after {
+    width: 8px;
+    height: 5px;
+    background-color: black;
+    content: "";
+    position: absolute;
+    transition: .3s linear;
+    transform: skew(30deg);
+}
+
+button::before {
+    top: -3px;
+    left: 15%;
+}
+
+button::after {
+    bottom: -3px;
+    right: 15%;
+}
+
+button:hover::before {
+    left: 75%
+}
+
+button:hover::after {
+    right: 75%
+}
